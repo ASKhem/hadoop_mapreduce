@@ -1,0 +1,5 @@
+Amex    475.26
+Cash    480.24
+Discover        493.51
+MasterCard      469.63
+Visa    483.82
