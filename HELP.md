@@ -119,3 +119,13 @@ Para crear un ficheiro con los resultados de hacer cat:
     ```
     cat contalista/ > resultado.txt
     ```
+
+Otra forma de lanzar un traballo (No recomendable pero funciona):
+```
+hadoop jar /opt/cloudera/parcels/CDH/lib/hadoop-mapreduce/hadoop-streaming.jar \
+-files mapper.py,reducer.py \
+-input purchases.txt \
+-output COMPRASXTENDA \
+-mapper "python mapper.py" \
+-reducer "python reducer.py"
+```
